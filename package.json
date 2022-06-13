@@ -1,0 +1,23 @@
+{
+  "name": "tailwind_3.0-travel_page",
+  "version": "1.0.0",
+  "description": "Proyecto de una pagina web de viajes",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisAriza/travel_page.git"
+  },
+  "keywords": [],
+  "author": "Luis Ariza <luismanuelariza@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisAriza/travel_page/issues"
+  },
+  "homepage": "https://github.com/luisAriza/travel_page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.2"
+  }
+}
