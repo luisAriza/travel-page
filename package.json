@@ -4,7 +4,7 @@
   "description": "Proyecto de una pagina web de viajes",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch"
   },
   "repository": {
     "type": "git",
