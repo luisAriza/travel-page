@@ -3,6 +3,3 @@
 @tailwind utilities;
 @tailwind variants;
 
-p {
-	color: red;
-}
