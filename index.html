@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image" sizes="20x20" href="./favicon.ico">
+	<link rel="stylesheet" href="./css/min.output.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+		rel="stylesheet">
+	<title>Travel Page</title>
+</head>
+
+<body class="font-Montserrat">
+	<nav></nav>
+	<div id="tab_bar"></div>
+
+	<header id="home w-screen">
+		<div class="w-full flex flex-col absolute space-y-80 pt-4 items-center">
+			<input class="w-5/6 text-center outline-none p-3 rounded-full shadow-sm" type="search"
+				placeholder="San Francisco">
+			<button class="w-1/2 bg-white text-primary text-md font-semibold p-3 rounded-full">Explore More</button>
+		</div>
+		<figure class="w-full h-full">
+			<img src="./css/assets/img/sanFrancisco.jpg" alt="Fondo de San Francisco">
+		</figure>
+	</header>
+
+	<main class="w-screen">
+		<section class="w-full py-6" id="recommended">
+			<h3 class="pl-4 text-2xl font-semibold text-primary">
+				Our Recommendations
+			</h3>
+			<div
+				class="cards-container py-6 flex gap-4 overflow-x-scroll overscroll-x-contain  scroll-smooth snap-both snap-mandatory">
+				<!-- Card #1 -->
+				<section class="card ml-4">
+					<figure class="card-img bg-norway"></figure>
+					<article class="card-description bg-secondary text-white">
+						<h4 class="font-bold">
+							Norway
+						</h4>
+						<p class="text-xs">
+							Beautiful landscapes
+						</p>
+					</article>
+				</section>
+				<!-- Card #2 -->
+				<section class="card">
+					<figure class="card-img bg-new_york"></figure>
+					<article class="card-description bg-white text-tertiary">
+						<h4 class="font-bold">
+							New York
+						</h4>
+						<p class="text-xs">
+							Concrete jungle
+						</p>
+					</article>
+				</section>
+				<!-- Card #3 -->
+				<section class="card">
+					<figure class="card-img bg-yosemite"></figure>
+					<article class="card-description bg-secondary text-white">
+						<h4 class="font-bold">
+							Yosemite
+						</h4>
+						<p class="text-xs">
+							A break from the world
+						</p>
+					</article>
+				</section>
+				<!-- Card #4 -->
+				<section class="card">
+					<figure class="card-img bg-seattle"></figure>
+					<article class="card-description bg-white text-tertiary">
+						<h4 class="font-bold">
+							Seattle
+						</h4>
+						<p class="text-xs">
+							Big City
+						</p>
+					</article>
+				</section>
+				<!-- Card #5 -->
+				<section class="card mr-4">
+					<figure class="card-img bg-switzerland"></figure>
+					<article class="card-description bg-secondary text-white">
+						<h4 class="font-bold">
+							Switzerland
+						</h4>
+						<p class="text-xs">
+							Big City
+						</p>
+					</article>
+				</section>
+			</div>
+		</section>
+
+		<section id="featured_income"></section>
+	</main>
+
+	<footer></footer>
+</body>
+
+</html>
