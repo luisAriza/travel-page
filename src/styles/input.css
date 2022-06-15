@@ -4,5 +4,11 @@
 @tailwind variants;
 
 .card {
-	@apply w-1/2 max-w-xs h-60 shadow-md rounded-lg overflow-hidden;
+	@apply h-56 shadow-md rounded-lg snap-center;
+}
+.card-img {
+	@apply w-44 max-w-xs h-3/5 bg-cover rounded-t-lg;
+}
+.card-description {
+	@apply h-2/5 p-3 space-y-1 rounded-b-lg;
 }
