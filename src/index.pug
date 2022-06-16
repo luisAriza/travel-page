@@ -11,10 +11,22 @@ block main
 			+mini-card('bg-switzerland', 'Switzerland', 'Big City', 'bg-secondary', 'text-white', "mr-4")
 	section#trending-stays.w-full.pt-6.px-4
 		h2.title.mb-6 Trending Stays
-			+card('bg-chicago', 'Chicago', '2 rooms, bathroom and kitchen.')
-			+card('bg-LA', 'Los Angeles', '4 rooms, 3 bathrooms,  kitchen and private pool.')
-			+card('bg-miami', 'Miami', '3 rooms, 2 bathrooms,  kitchen and amazing sea view.')
-			+card('bg-bali', 'Bali', '2 rooms, 2 bathrooms,  kitchen and private pool.')
-	section#FAQs
-
-	section#about-us
+		+card('bg-chicago', 'Chicago', '2 rooms, bathroom and kitchen.')
+		+card('bg-LA', 'Los Angeles', '4 rooms, 3 bathrooms,  kitchen and private pool.')
+		+card('bg-miami', 'Miami', '3 rooms, 2 bathrooms,  kitchen and amazing sea view.')
+		+card('bg-bali', 'Bali', '2 rooms, 2 bathrooms,  kitchen and private pool.')
+	section#FAQs.w-full.pt-1.px-6
+		h2.title.mb-4 FAQs
+		+FAQ('Payment Methods')
+		+FAQ('Cancellation Policy')
+		+FAQ('Long Stays')
+	section#about-us.inline-block.w-full.mt-4.px-6.pt-4.bg-gray-100.border-y-2.border-gray-200.text-sm.font-medium.text-gray-400
+		h3.text-xl.font-semibold.mb-4 About Us
+		.flex.flex-col.gap-2
+			p Investors
+			p Jobs
+			p Privacy policy
+			p Terms and Conditions
+			p Platzi Travel, inc
+			p Follow Us
+	section#tab-bar

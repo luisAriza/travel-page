@@ -7,6 +7,13 @@
   @apply text-2xl font-semibold text-primary;
 }
 
+.subtitle {
+  @apply text-lg font-semibold tracking-wide text-primary mb-2;
+}
+.description {
+  @apply text-sm font-semibold mb-5;
+}
+
 .mini-cards-container::-webkit-scrollbar {
   display: none;
 }
@@ -22,11 +29,11 @@
 }
 
 .card {
-  @apply mx-2 mt-6 rounded-2xl overflow-hidden;
-}
-.card__img {
-  @apply w-full h-96 bg-cover bg-center;
+  @apply mx-2 mb-8 rounded-2xl overflow-hidden;
 }
 .card__description {
   @apply w-3/5 ml-6 mt-12 absolute text-white;
+}
+.card__img {
+  @apply w-full h-96 bg-cover bg-center bg-no-repeat;
 }
