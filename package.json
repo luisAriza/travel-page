@@ -4,9 +4,9 @@
   "description": "Proyecto de una pagina web de viajes",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwindcss -i ./src/styles/input.css -o ./public/css/min.output.css --minify --watch",
-    "pug": "pug ./src/index.pug -o ./public/ -w",
-    "deploy": "gh-pages -d public"
+    "tailwind": "tailwindcss -i ./src/styles/input.css -o ./dist/css/min.output.css --minify --watch",
+    "pug": "pug ./src/index.pug -o ./dist/ -w",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",

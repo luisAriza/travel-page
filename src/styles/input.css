@@ -3,8 +3,12 @@
 @tailwind utilities;
 @tailwind variants;
 
+.title {
+  @apply .text-2xl.font-semibold.text-primary;
+}
+
 .mini-card {
-  @apply h-56 shadow-md rounded-lg snap-center;
+  @apply h-56 shadow-md rounded-lg;
 }
 .mini-card__img {
   @apply w-44 max-w-xs h-3/5 bg-cover rounded-t-lg;

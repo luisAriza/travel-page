@@ -2,13 +2,14 @@ extend templates/template.pug
 
 block main
 	section#recommended.w-full.py-6
-		h3.pl-4.text-2xl.font-semibold.text-primary Our Recommendations
-		.cards-container.py-6.flex.gap-4.overflow-x-scroll.overscroll-x-contain.scroll-smooth.snap-both.snap-mandatory
-			+mini_card('bg-norway', 'Norway', 'Beautiful landscapes', 'bg-secondary', 'text-white', "ml-4")
-			+mini_card('bg-new_york', 'New York', 'Concrete jungle', 'bg-white', 'text-tertiary')
-			+mini_card('bg-yosemite', 'Yosemite', 'A break from the world', 'bg-secondary', 'text-white')
-			+mini_card('bg-seattle', 'Seattle', 'Big City', 'bg-white', 'text-tertiary')
-			+mini_card('bg-switzerland', 'Switzerland', 'Big City', 'bg-secondary', 'text-white', "mr-4")
-	section#trending
+		h2.title.pl-4 Our Recommendations
+		.cards-container.py-6.flex.gap-4.overflow-x-scroll.overscroll-x-contain.scroll-smooth
+			+mini-card('bg-norway', 'Norway', 'Beautiful landscapes', 'bg-secondary', 'text-white', "ml-4")
+			+mini-card('bg-new_york', 'New York', 'Concrete jungle', 'bg-white', 'text-tertiary')
+			+mini-card('bg-yosemite', 'Yosemite', 'A break from the world', 'bg-secondary', 'text-white')
+			+mini-card('bg-seattle', 'Seattle', 'Big City', 'bg-white', 'text-tertiary')
+			+mini-card('bg-switzerland', 'Switzerland', 'Big City', 'bg-secondary', 'text-white', "mr-4")
+	section#trending-stays
+		h2.title.px-5 Trending Stays
 	section#FAQs
 	section#about-us
