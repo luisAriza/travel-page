@@ -4,14 +4,14 @@
 @tailwind variants;
 
 .title {
-  @apply text-2xl font-semibold text-primary;
+  @apply text-2xl font-bold text-primary;
 }
 
 .subtitle {
-  @apply text-lg font-semibold tracking-wide text-primary mb-2;
+  @apply text-lg font-semibold tracking-wide text-primary;
 }
 .description {
-  @apply text-sm font-semibold mb-5;
+  @apply text-sm font-semibold mb-3;
 }
 
 .mini-cards-container::-webkit-scrollbar {
@@ -19,21 +19,28 @@
 }
 
 .mini-card {
-  @apply h-56 shadow-md rounded-lg;
+  @apply h-56 shadow-md rounded-lg transition ease-in-out duration-500 hover:-translate-y-2 hover:scale-110;
 }
 .mini-card__img {
-  @apply w-44 max-w-xs h-3/5 bg-cover rounded-t-lg;
+  @apply w-44 max-w-xs h-3/5 bg-cover bg-no-repeat rounded-t-lg;
 }
 .mini-card__description {
   @apply h-2/5 p-3 space-y-1 rounded-b-lg;
 }
 
 .card {
-  @apply mx-2 mb-8 rounded-2xl overflow-hidden;
+  @apply my-1 mx-2 rounded-2xl overflow-hidden;
 }
 .card__description {
-  @apply w-3/5 ml-6 mt-12 absolute text-white;
+  @apply w-3/5 ml-6 mt-16 absolute text-white;
 }
 .card__img {
-  @apply w-full h-96 bg-cover bg-center bg-no-repeat;
+  @apply w-full h-[36rem] bg-fixed bg-cover bg-center bg-no-repeat;
+}
+
+.input-animation {
+  @apply transition ease-in-out duration-200 delay-150 focus-within:shadow-sm hover:translate-y-1;
+}
+.button-animation {
+  @apply transition ease-in-out duration-200 delay-100 hover:-translate-y-1 hover:scale-110 hover:bg-primary hover:text-white;
 }
