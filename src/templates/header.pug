@@ -1,6 +1,9 @@
 header#home
 	include components/navbar.pug
 	.w-full.flex.flex-col.absolute.space-y-80.pt-4.items-center
-		input.input-animation.text-center.outline-none.p-3.rounded-full.shadow-lg(class='w-5/6' type='search' placeholder='San Francisco')
+		label(for="search").flex.align-items-center.gap-4.input-animation.py-3.px-5.rounded-full.shadow-lg.bg-white(class='w-5/6')
+			span.flex.align-items-center
+				img.w-5(src="./assets/svg/search.svg" alt="Icono de Busqueda")
+			input#search.text-start.outline-none.w-full.text-md.font-semibold(type='search' placeholder='San Francisco')
 		button.button-animation.bg-white.text-primary.text-md.font-semibold.p-3.rounded-full(class='w-1/2') Explore More
 	figure.w-full: img(src='./assets/img/sanFrancisco.jpg' alt='Fondo de San Francisco')
