@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tailwind": "tailwindcss -i ./src/styles/input.css -o ./public/css/min.output.css --minify --watch",
+    "pug": "pug ./src/template/index.pug -o ./public/ -w",
     "deploy": "gh-pages -d public"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/luisAriza/travel_page#readme",
   "devDependencies": {
+    "pug": "^3.0.2",
     "tailwindcss": "^3.1.2"
   },
   "dependencies": {

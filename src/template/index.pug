@@ -1,0 +1,58 @@
+
+html(lang="en")
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel='icon' type='image' sizes='20x20' href='./favicon.ico')
+		link(rel='stylesheet' href='./css/min.output.css')
+		link(rel='preconnect' href='https://fonts.googleapis.com')
+		link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+		link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap' rel='stylesheet')
+		title Travel Page
+
+	body.w-screen.font-Montserrat
+		nav
+		#tab_bar
+		header#home
+			.w-full.flex.flex-col.absolute.space-y-80.pt-4.items-center
+				input.text-center.outline-none.p-3.rounded-full.shadow-sm(class='w-5/6' type='search' placeholder='San Francisco')
+				button.bg-white.text-primary.text-md.font-semibold.p-3.rounded-full(class='w-1/2') Explore More
+			figure.w-full
+				img(src='./css/assets/img/sanFrancisco.jpg' alt='Fondo de San Francisco')
+		main#main
+			section#recommended.w-full.py-6
+				h3.pl-4.text-2xl.font-semibold.text-primary Our Recommendations
+				.cards-container.py-6.flex.gap-4.overflow-x-scroll.overscroll-x-contain.scroll-smooth.snap-both.snap-mandatory
+					// Card #1
+					section.card.ml-4
+						figure.card-img.bg-norway
+						article.card-description.bg-secondary.text-white
+							h4.font-bold Norway
+							p.text-xs Beautiful landscapes
+					// Card #2
+					section.card
+						figure.card-img.bg-new_york
+						article.card-description.bg-white.text-tertiary
+							h4.font-bold New York
+							p.text-xs Concrete jungle
+					// Card #3
+					section.card
+						figure.card-img.bg-yosemite
+						article.card-description.bg-secondary.text-white
+							h4.font-bold Yosemite
+							p.text-xs A break from the world
+					// Card #4
+					section.card
+						figure.card-img.bg-seattle
+						article.card-description.bg-white.text-tertiary
+							h4.font-bold Seattle
+							p.text-xs Big City
+					// Card #5
+					section.card.mr-4
+						figure.card-img.bg-switzerland
+						article.card-description.bg-secondary.text-white
+							h4.font-bold Switzerland
+							p.text-xs Big City
+			section#featured_income
+.f
