@@ -1,0 +1,6 @@
+mixin mini_card(image, title, description, bg_color, text_color, margin='m-0')
+	section.card(class=margin)
+		figure.card-img(class=image)
+		article.card-description(class=bg_color class=text_color)
+			h4.font-bold=title
+			p.text-xs=description
