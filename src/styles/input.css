@@ -4,7 +4,11 @@
 @tailwind variants;
 
 .title {
-  @apply .text-2xl.font-semibold.text-primary;
+  @apply text-2xl font-semibold text-primary;
+}
+
+.mini-cards-container::-webkit-scrollbar {
+  display: none;
 }
 
 .mini-card {
@@ -15,4 +19,14 @@
 }
 .mini-card__description {
   @apply h-2/5 p-3 space-y-1 rounded-b-lg;
+}
+
+.card {
+  @apply mx-2 mt-6 rounded-2xl overflow-hidden;
+}
+.card__img {
+  @apply w-full h-96 bg-cover bg-center;
+}
+.card__description {
+  @apply w-3/5 ml-6 mt-12 absolute text-white;
 }

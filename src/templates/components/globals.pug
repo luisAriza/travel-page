@@ -4,3 +4,10 @@ mixin mini-card(image, title, description, bg_color, text_color, margin='m-0')
 		article.mini-card__description(class=bg_color class=text_color)
 			h4.font-bold=title
 			p.text-xs=description
+
+mixin card(image, title, description)
+	section.card
+		article.card__description
+			h3.text-2xl.font-extrabold.mb-3=title
+			p.text-base.font-medium=description
+		figure.card__img(class=image)

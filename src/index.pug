@@ -1,15 +1,20 @@
 extend templates/template.pug
 
 block main
-	section#recommended.w-full.py-6
+	section#recommended.w-full.pt-6
 		h2.title.pl-4 Our Recommendations
-		.cards-container.py-6.flex.gap-4.overflow-x-scroll.overscroll-x-contain.scroll-smooth
+		.mini-cards-container.pt-6.pb-1.flex.gap-4.overflow-x-scroll.overscroll-x-contain.scroll-smooth
 			+mini-card('bg-norway', 'Norway', 'Beautiful landscapes', 'bg-secondary', 'text-white', "ml-4")
 			+mini-card('bg-new_york', 'New York', 'Concrete jungle', 'bg-white', 'text-tertiary')
 			+mini-card('bg-yosemite', 'Yosemite', 'A break from the world', 'bg-secondary', 'text-white')
 			+mini-card('bg-seattle', 'Seattle', 'Big City', 'bg-white', 'text-tertiary')
 			+mini-card('bg-switzerland', 'Switzerland', 'Big City', 'bg-secondary', 'text-white', "mr-4")
-	section#trending-stays
-		h2.title.px-5 Trending Stays
+	section#trending-stays.w-full.pt-6.px-4
+		h2.title.mb-6 Trending Stays
+			+card('bg-chicago', 'Chicago', '2 rooms, bathroom and kitchen.')
+			+card('bg-LA', 'Los Angeles', '4 rooms, 3 bathrooms,  kitchen and private pool.')
+			+card('bg-miami', 'Miami', '3 rooms, 2 bathrooms,  kitchen and amazing sea view.')
+			+card('bg-bali', 'Bali', '2 rooms, 2 bathrooms,  kitchen and private pool.')
 	section#FAQs
+
 	section#about-us
