@@ -32,7 +32,7 @@
   @apply my-1 mx-2 rounded-2xl overflow-hidden;
 }
 .card__description {
-  @apply w-3/5 ml-6 mt-16 absolute text-white;
+  @apply w-3/4 h-[28rem] pl-8 pr-16 pt-12 absolute text-white transition ease-in-out delay-100 duration-200 hover:translate-y-10 hover:translate-x-4 hover:scale-110;
 }
 .card__img {
   @apply w-full h-[36rem] bg-fixed bg-cover bg-center bg-no-repeat;
