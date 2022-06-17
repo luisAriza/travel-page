@@ -36,14 +36,19 @@
   @apply w-full h-[36rem] bg-fixed bg-cover bg-center bg-no-repeat;
 }
 
+.night-mode {
+  @apply transition ease-in-out active:shadow-sm active:translate-y-0.5;
+}
 .input-animation {
-  @apply transition ease-in-out duration-200 delay-150 focus-within:shadow-sm hover:translate-y-1;
+  @apply transition ease-in-out duration-200 delay-150 focus-within:shadow-sm focus-within:translate-y-1;
 }
 .button-animation {
   @apply transition ease-in-out duration-200 delay-100 hover:-translate-y-1 hover:scale-110 hover:bg-primary hover:text-white;
 }
 
 #tabBar,
-button {
+button,
+span,
+figure {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

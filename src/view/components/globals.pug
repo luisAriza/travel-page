@@ -1,4 +1,4 @@
--var list_about_us = ['Investors', 'Jobs', 'Privacy policy', 'Terms and Conditions', 'Platzi Travel, inc', 'Follow Us']
+-var list_about_us = ['Investors', 'Jobs', 'Privacy policy', 'Terms and Conditions', 'Platzi Travel, inc', 'Follow Us'];
 
 mixin mini-card(image, title, description, bg_color, text_color, margin='m-0')
 	section.mini-card(class= margin)
@@ -14,6 +14,7 @@ mixin card(image, title, description)
 				h3.text-2xl.font-bold.tracking-wider.mb-3= title
 				p.text-base.font-normal= description
 			figure.card__img(class= image)
+
 mixin FAQ(title)
 	h3.subtitle= title
 	p.description We accept VISA, MasterCard, American Express, Paypal and Binance.
