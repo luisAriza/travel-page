@@ -1,4 +1,4 @@
-footer#about-us.w-full.px-6.pt-4.pb-8.bg-gray-100.border-y-2.border-gray-200.text-sm.font-medium.text-gray-300.flex.flex-col.gap-3
+footer#about-us.w-full.px-6.pt-4.pb-8.bg-gray-100.border-t.border-gray-200.text-sm.font-medium.text-gray-300.flex.flex-col.gap-3
 	h3.text-xl.font-semibold.mb-2 About Us
 	each item in list_about_us
 		a(href="#").w-fit= item
@@ -7,3 +7,4 @@ footer#about-us.w-full.px-6.pt-4.pb-8.bg-gray-100.border-y-2.border-gray-200.tex
 			img(src="./assets/svg/twitter.svg" alt="Icono de Twitter")
 		a(href="#")
 			img(src="./assets/svg/instagram.svg" alt="Icono de Instagram")
+include components/tabBar.pug
