@@ -1,9 +1,17 @@
-#tabBar(class='md:hidden landscape:hidden').w-full.py-5.flex.justify-center.gap-10.sticky.bottom-0.bg-white.border.border-gray-200
-	a(href="#")
+#tabBar(class='md:hidden landscape:hidden lg:flex lg:landscape:flex lg:static lg:border-none lg:py-0 lg:text-primary lg:font-bold lg:gap-8 xl:gap-12 xl:font-semibold').w-full.py-5.flex.justify-center.gap-10.bg-white.border.border-gray-200
+	a(href="#" class='lg:hidden')
 		img(src="./assets/svg/home.svg" alt="Icono del Home")
 	a(href="#recommended")
-		img(src="./assets/svg/search.svg" alt="Icono de Busqueda")
+		img(src="./assets/svg/search.svg" alt="Icono de Busqueda" class='lg:hidden')
+		p.hidden(class='lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1')
+			| Locations
 	a(href="#trending-stays")
-		img(src="./assets/svg/heart.svg" alt="Icono de Favoritos")
-	button
+		img(src="./assets/svg/heart.svg" alt="Icono de Favoritos" class='lg:hidden')
+		p.hidden(class='lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1')
+			| Stays
+	button(class='lg:hidden')
 		img(src="./assets/svg/user.svg" alt="Icono de Usuario")
+	a(href="#FAQs" class='hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1')
+		| FAQs
+	a(href="#about-us" class='hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1')
+		| About Us
