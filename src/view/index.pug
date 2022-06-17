@@ -13,10 +13,10 @@ block main
 		section#trending-stays.w-full
 			h2.title.pl-5.pb-6(class='md:pl-10') Trending Stays
 			.card-container.px-4.grid.gap-6(class='md:px-10 md:grid-cols-5 md:grid-rows-3')
-				+card('bg-chicago', 'Chicago', '2 rooms, bathroom and kitchen.', 'md:col-span-2')
-				+card('bg-LA', 'Los Angeles', '4 rooms, 3 bathrooms,  kitchen and private pool.', 'md:col-span-3')
-				+card('bg-miami', 'Miami', '3 rooms, 2 bathrooms,  kitchen and amazing sea view.')
-				+card('bg-bali', 'Bali', '2 rooms, 2 bathrooms,  kitchen and private pool.')
+				+card('bg-chicago', 'Chicago', '2 rooms, bathroom and kitchen.', 'md:col-span-2 lg:col-span-full')
+				+card('bg-LA', 'Los Angeles', '4 rooms, 3 bathrooms,  kitchen and private pool.', 'md:col-span-3 lg:col-span-full')
+				+card('bg-miami', 'Miami', '3 rooms, 2 bathrooms,  kitchen and amazing sea view.', 'md:col-span-full')
+				+card('bg-bali', 'Bali', '2 rooms, 2 bathrooms,  kitchen and private pool.', 'md:col-span-full')
 		section#FAQs.w-full.px-6.pb-2.flex.flex-col.gap-2
 			h2.title.mb-2 FAQs
 			+FAQ('Payment Methods')

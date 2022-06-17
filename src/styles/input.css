@@ -33,7 +33,7 @@
   @apply w-3/4 h-[30rem] pl-8 pr-16 pt-12 absolute text-white transition ease-in-out delay-100 duration-200 hover:translate-y-10 hover:translate-x-4 hover:scale-110;
 }
 .card__img {
-  @apply w-full h-[36rem] md:h-[28rem] bg-cover bg-center bg-no-repeat;
+  @apply w-full h-[36rem] md:h-[26rem] bg-cover bg-center bg-no-repeat;
 }
 
 .night-mode {
