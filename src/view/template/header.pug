@@ -1,9 +1,11 @@
-header.w-full.px-6.flex.flex-col.absolute.items-center(class='h-[28rem]')
+header.w-full.px-6.flex.flex-col.items-center(class='h-[30rem] md:px-0 md:items-start lg:h-[36rem]')
+	figure.w-full.absolute.bg-sanFrancisco.bg-cover.bg-top.bg-no-repeat(class='h-[30rem] sm:bg-sanFranciscoDesktop sm:bg-local lg:h-[36rem]')
 	include ../components/navbar.pug
-	label(for="search").w-full.flex.align-items-center.gap-4.input-animation.py-3.px-5.rounded-full.shadow-lg.bg-white
+	label(for="search" class='md:mt-12 md:hidden md:').z-10.w-full.flex.items-center.gap-4.input-animation.py-3.px-5.rounded-full.shadow-lg.bg-white
 		span.w-auto.flex.align-items-center
 			img.w-5(src="./assets/svg/search.svg" alt="Icono de Busqueda")
 		input#search.text-start.outline-none.w-full.text-md.font-semibold(type='search' placeholder='San Francisco')
-	button.button-animation.bg-white.text-primary.text-md.font-semibold.p-3.rounded-full.mt-56(class='w-3/5') Explore More
-figure.w-full(class='h-[28rem]')
-	img.w-full.h-full(src='./assets/img/sanFrancisco.jpg' alt='Fondo de San Francisco')
+	h1.hidden.z-10.text-3xl.font-bold.w-80.ml-14.mt-24(class='md:block lg:w-96 lg:text-4xl lg:mt-32')
+		| Find More Locations like this
+	button.z-10.button-animation.bg-white.text-primary.text-md.font-semibold.p-3.rounded-full.mt-64.shadow-lg(class='w-3/5 md:w-44 md:mt-6 md:ml-14') 
+		| Explore More

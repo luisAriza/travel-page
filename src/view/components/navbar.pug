@@ -1,3 +1,12 @@
-nav.w-full.py-5.flex.justify-end
-	figure.dark.night-mode.py-2.px-5.rounded-full.bg-white.shadow-lg.cursor-pointer
-		img(src="./assets/svg/moon.svg" alt="Icono Modo nocturno")
+nav.z-10.w-full.py-5.flex.justify-end(class='md:bg-white md:justify-between md:px-10 md:py-3 md:items-center')
+	a(href="#" class='md:flex').hidden.items-center.gap-3
+		img(src="./assets/svg/favicon.svg" alt="Icono de la pagina").w-10(class='')
+		span.text-primary.text-lg.font-bold.tracking-wide
+			| Travel Page
+	label(for="search" class='md:w-1/2 md:flex lg:hidden').hidden.z-10.w-full.items-center.gap-4.py-3.px-5.rounded-full.shadow-sm
+		span.w-auto.flex.align-items-center
+			img.w-5(src="./assets/svg/search.svg" alt="Icono de Busqueda")
+		input#search.text-start.outline-none.w-full.text-md.font-semibold(type='search' placeholder='San Francisco')
+	figure.night-mode.py-2.px-5.rounded-full.bg-white.shadow-lg.cursor-pointer(class='md:p-0 md:bg-transparent md:transition-none md:active:translate-y-0 md:active:shadow-none md:shadow-none md:flex md:gap-6 md:cursor-default')
+		img(src="./assets/svg/moon.svg" alt="Icono de modo nocturno" class='md:w-5 md:cursor-pointer')
+		img.hidden(src="./assets/svg/user.svg" alt="Icono de usuario" class='md:block md:w-5')
