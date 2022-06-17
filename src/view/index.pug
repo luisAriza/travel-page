@@ -1,22 +1,23 @@
 extend template/template.pug
 
 block main
-	main#home.flex.flex-col.gap-6.w-full.py-6
+	main#home.flex.flex-col.gap-8.w-full.py-6(class='md:py-10 md:gap-10')
 		section#recommended.w-full
-			h2.title.pl-4 Our Recommendations
-			.mini-cards-container.pt-6.pb-2.flex.gap-5.overflow-x-scroll.overscroll-x-contain.scroll-smooth
+			h2.title.pl-5(class='md:pl-10') Our Recommendations
+			.mini-cards-container.pt-6.pb-2.flex.gap-5.overflow-x-scroll.overscroll-x-contain.scroll-smooth(class='md:gap-7 md:pt-8')
 				+mini-card('bg-norway', 'Norway', 'Beautiful landscapes', 'bg-secondary', 'text-white', "ml-6")
 				+mini-card('bg-new_york', 'New York', 'Concrete jungle', 'bg-white', 'text-tertiary')
 				+mini-card('bg-yosemite', 'Yosemite', 'A break from the world', 'bg-secondary', 'text-white')
 				+mini-card('bg-seattle', 'Seattle', 'Big City', 'bg-white', 'text-tertiary')
 				+mini-card('bg-switzerland', 'Switzerland', 'Big City', 'bg-secondary', 'text-white', "mr-6")
-		section#trending-stays.w-full.px-4.flex.flex-col.gap-6
-			h2.title Trending Stays
-			+card('bg-chicago', 'Chicago', '2 rooms, bathroom and kitchen.')
-			+card('bg-LA', 'Los Angeles', '4 rooms, 3 bathrooms,  kitchen and private pool.')
-			+card('bg-miami', 'Miami', '3 rooms, 2 bathrooms,  kitchen and amazing sea view.')
-			+card('bg-bali', 'Bali', '2 rooms, 2 bathrooms,  kitchen and private pool.')
-		section#FAQs.w-full.px-6.py-4.flex.flex-col.gap-2
+		section#trending-stays.w-full
+			h2.title.pl-5.pb-6(class='md:pl-10') Trending Stays
+			.card-container.px-4.grid.gap-6(class='md:px-10 md:grid-cols-5 md:grid-rows-3')
+				+card('bg-chicago', 'Chicago', '2 rooms, bathroom and kitchen.', 'md:col-span-2')
+				+card('bg-LA', 'Los Angeles', '4 rooms, 3 bathrooms,  kitchen and private pool.', 'md:col-span-3')
+				+card('bg-miami', 'Miami', '3 rooms, 2 bathrooms,  kitchen and amazing sea view.')
+				+card('bg-bali', 'Bali', '2 rooms, 2 bathrooms,  kitchen and private pool.')
+		section#FAQs.w-full.px-6.pb-2.flex.flex-col.gap-2
 			h2.title.mb-2 FAQs
 			+FAQ('Payment Methods')
 			+FAQ('Cancellation Policy')

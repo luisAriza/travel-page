@@ -17,23 +17,23 @@
   display: none;
 }
 .mini-card {
-  @apply h-56 shadow-md rounded-lg transition ease-in-out delay-100 duration-200 hover:-translate-y-2 hover:scale-110;
+  @apply h-56 md:h-60 shadow-md rounded-lg transition ease-in-out delay-100 duration-200 hover:-translate-y-2 hover:scale-110;
 }
 .mini-card__img {
-  @apply w-44 max-w-xs h-3/5 bg-cover bg-no-repeat rounded-t-lg;
+  @apply w-44 md:w-52 h-3/5 bg-cover bg-no-repeat rounded-t-lg;
 }
 .mini-card__description {
   @apply h-2/5 p-3 space-y-1 rounded-b-lg;
 }
 
 .card {
-  @apply my-1 mx-2 rounded-2xl overflow-hidden;
+  @apply my-1 mx-2 md:m-0 rounded-2xl overflow-hidden;
 }
 .card__description {
   @apply w-3/4 h-[30rem] pl-8 pr-16 pt-12 absolute text-white transition ease-in-out delay-100 duration-200 hover:translate-y-10 hover:translate-x-4 hover:scale-110;
 }
 .card__img {
-  @apply w-full h-[36rem] bg-fixed bg-cover bg-center bg-no-repeat;
+  @apply w-full h-[36rem] md:h-[28rem] bg-cover bg-center bg-no-repeat;
 }
 
 .night-mode {
