@@ -1,1 +1,141 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#CC2D4A"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="./css/min.output.css"><link rel="icon" type="image" sizes="20x20" href="./favicon.ico"><title>Travel Page</title></head><body class="w-full font-Montserrat box-border"><header class="w-full px-6 flex flex-col items-center h-[30rem] md:px-0 md:items-start lg:h-[36rem]"><figure class="w-full absolute bg-sanFrancisco bg-cover bg-top bg-no-repeat h-[30rem] sm:bg-sanFranciscoDesktop sm:bg-local lg:h-[36rem]"></figure><nav class="z-10 w-full py-5 flex justify-end md:bg-white md:justify-between md:px-10 md:py-2 md:items-center lg:px-16 lg:py-3 shadow-sm"><a class="md:flex hidden items-center gap-3" href="#"><img class="w-10" src="./assets/svg/favicon.svg" alt="Icono de la pagina"><span class="text-primary text-lg font-bold tracking-wide">Travel Page</span></a><label class="md:w-1/2 md:flex lg:hidden hidden z-10 w-full items-center gap-4 py-3 px-5 rounded-full shadow-sm" for="search"><span class="w-auto flex align-items-center"><img class="w-5" src="./assets/svg/search.svg" alt="Icono de Busqueda"></span><input class="text-start outline-none w-full text-md font-semibold" id="search" type="search" placeholder="San Francisco"></label><div class="tabBar hidden lg:block"><div class="md:hidden landscape:hidden lg:flex lg:landscape:flex lg:static lg:border-none lg:py-0 lg:text-primary lg:font-bold lg:gap-8 xl:gap-12 xl:font-semibold w-full py-5 flex justify-center gap-10 sticky bottom-0 bg-white border border-gray-200" id="tabBar"><a class="lg:hidden" href="#"><img src="./assets/svg/home.svg" alt="Icono del Home"></a><a href="#recommended"><img class="lg:hidden" src="./assets/svg/search.svg" alt="Icono de Busqueda"><p class="hidden lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1">Locations</p></a><a href="#trending-stays"><img class="lg:hidden" src="./assets/svg/heart.svg" alt="Icono de Favoritos"><p class="hidden lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1">Stays</p></a><button class="lg:hidden"><img src="./assets/svg/user.svg" alt="Icono de Usuario"></button><a class="hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1" href="#FAQs">FAQs</a><a class="hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1" href="#about-us">About Us</a></div></div><figure class="night-mode py-2 px-5 rounded-full bg-white shadow-lg cursor-pointer md:p-0 md:bg-transparent md:transition-none md:active:translate-y-0 md:active:shadow-none md:shadow-none md:flex md:gap-8 md:cursor-default"><img class="hidden lg:block lg:w-5 md:cursor-pointer" src="./assets/svg/search.svg" alt="Icono de Busqueda"><img class="md:w-5 md:cursor-pointer" src="./assets/svg/moon.svg" alt="Icono de modo nocturno"><img class="hidden md:block md:w-5" src="./assets/svg/user.svg" alt="Icono de usuario"></figure></nav><label class="md:mt-12 md:hidden md: z-10 w-full flex items-center gap-4 input-animation py-3 px-5 rounded-full shadow-lg bg-white" for="search"><span class="w-auto flex align-items-center"><img class="w-5" src="./assets/svg/search.svg" alt="Icono de Busqueda"></span><input class="text-start outline-none w-full text-md font-semibold" id="search" type="search" placeholder="San Francisco"></label><h1 class="hidden z-10 text-3xl font-bold w-80 ml-14 mt-24 md:block lg:w-96 lg:text-4xl lg:mt-32 lg:ml-20">Find More Locations like this</h1><button class="z-10 button-animation bg-white text-primary text-md font-semibold p-3 rounded-full mt-64 shadow-lg w-3/5 md:w-44 md:mt-4 lg:mt-6 md:ml-14 lg:ml-20">Explore More</button></header><main class="flex flex-col gap-6 w-full py-6" id="home"><section class="w-full" id="recommended"><h2 class="title pl-4">Our Recommendations</h2><div class="mini-cards-container pt-6 pb-2 flex gap-5 overflow-x-scroll overscroll-x-contain scroll-smooth"><section class="mini-card ml-6"><figure class="mini-card__img bg-norway"></figure><article class="mini-card__description bg-secondary text-white"><h4 class="font-bold">Norway</h4><p class="text-xs">Beautiful landscapes</p></article></section><section class="mini-card m-0"><figure class="mini-card__img bg-new_york"></figure><article class="mini-card__description bg-white text-tertiary"><h4 class="font-bold">New York</h4><p class="text-xs">Concrete jungle</p></article></section><section class="mini-card m-0"><figure class="mini-card__img bg-yosemite"></figure><article class="mini-card__description bg-secondary text-white"><h4 class="font-bold">Yosemite</h4><p class="text-xs">A break from the world</p></article></section><section class="mini-card m-0"><figure class="mini-card__img bg-seattle"></figure><article class="mini-card__description bg-white text-tertiary"><h4 class="font-bold">Seattle</h4><p class="text-xs">Big City</p></article></section><section class="mini-card mr-6"><figure class="mini-card__img bg-switzerland"></figure><article class="mini-card__description bg-secondary text-white"><h4 class="font-bold">Switzerland</h4><p class="text-xs">Big City</p></article></section></div></section><section class="w-full px-4 flex flex-col gap-6" id="trending-stays"><h2 class="title">Trending Stays</h2><section class="card"><div class="content"><article class="card__description"><h3 class="text-2xl font-bold tracking-wider mb-3">Chicago</h3><p class="text-base font-normal">2 rooms, bathroom and kitchen.</p></article><figure class="card__img bg-chicago"></figure></div></section><section class="card"><div class="content"><article class="card__description"><h3 class="text-2xl font-bold tracking-wider mb-3">Los Angeles</h3><p class="text-base font-normal">4 rooms, 3 bathrooms,  kitchen and private pool.</p></article><figure class="card__img bg-LA"></figure></div></section><section class="card"><div class="content"><article class="card__description"><h3 class="text-2xl font-bold tracking-wider mb-3">Miami</h3><p class="text-base font-normal">3 rooms, 2 bathrooms,  kitchen and amazing sea view.</p></article><figure class="card__img bg-miami"></figure></div></section><section class="card"><div class="content"><article class="card__description"><h3 class="text-2xl font-bold tracking-wider mb-3">Bali</h3><p class="text-base font-normal">2 rooms, 2 bathrooms,  kitchen and private pool.</p></article><figure class="card__img bg-bali"></figure></div></section></section><section class="w-full px-6 py-4 flex flex-col gap-2" id="FAQs"><h2 class="title mb-2">FAQs</h2><h3 class="subtitle">Payment Methods</h3><p class="description">We accept VISA, MasterCard, American Express, Paypal and Binance.</p><h3 class="subtitle">Cancellation Policy</h3><p class="description">We accept VISA, MasterCard, American Express, Paypal and Binance.</p><h3 class="subtitle">Long Stays</h3><p class="description">We accept VISA, MasterCard, American Express, Paypal and Binance.</p></section></main><footer class="w-full px-6 pt-4 pb-8 bg-gray-100 border-t border-gray-200 text-sm font-medium text-gray-400 flex flex-col gap-3" id="about-us"><h3 class="text-xl font-semibold mb-2">About Us</h3><a class="w-fit" href="#">Investors</a><a class="w-fit" href="#">Jobs</a><a class="w-fit" href="#">Privacy policy</a><a class="w-fit" href="#">Terms and Conditions</a><a class="w-fit" href="#">Platzi Travel, inc</a><a class="w-fit" href="#">Follow Us</a><div class="social-media flex gap-4 w-fit"><a href="#"><img src="./assets/svg/twitter.svg" alt="Icono de Twitter"></a><a href="#"><img src="./assets/svg/instagram.svg" alt="Icono de Instagram"></a></div></footer><div class="tabBar lg:hidden"><div class="md:hidden landscape:hidden lg:flex lg:landscape:flex lg:static lg:border-none lg:py-0 lg:text-primary lg:font-bold lg:gap-8 xl:gap-12 xl:font-semibold w-full py-5 flex justify-center gap-10 sticky bottom-0 bg-white border border-gray-200" id="tabBar"><a class="lg:hidden" href="#"><img src="./assets/svg/home.svg" alt="Icono del Home"></a><a href="#recommended"><img class="lg:hidden" src="./assets/svg/search.svg" alt="Icono de Busqueda"><p class="hidden lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1">Locations</p></a><a href="#trending-stays"><img class="lg:hidden" src="./assets/svg/heart.svg" alt="Icono de Favoritos"><p class="hidden lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1">Stays</p></a><button class="lg:hidden"><img src="./assets/svg/user.svg" alt="Icono de Usuario"></button><a class="hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1" href="#FAQs">FAQs</a><a class="hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1" href="#about-us">About Us</a></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#CC2D4A">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/min.output.css">
+    <link rel="icon" type="image" sizes="20x20" href="./favicon.ico">
+    <title>Travel Page</title>
+  </head>
+  <body class="w-full font-Montserrat box-border xl:max-w-6xl xl:mx-auto">
+    <header class="w-full px-6 flex flex-col items-center h-[30rem] md:px-0 md:items-start lg:h-[36rem]">
+      <figure class="w-full absolute bg-sanFrancisco bg-cover bg-top bg-no-repeat h-[30rem] sm:bg-sanFranciscoDesktop sm:bg-local lg:h-[36rem]"></figure>
+      <nav class="z-10 w-full py-5 flex justify-end md:bg-white md:justify-between md:px-7 md:py-2 md:items-center lg:px-9 lg:py-3 md:shadow-sm xl:shadow-none"><a class="md:flex hidden items-center gap-1" href="#"><img class="w-10" src="./assets/svg/favicon.svg" alt="Icono de la pagina"><span class="text-primary text-lg font-bold">Travel Page</span></a>
+        <label class="md:w-1/2 md:flex lg:hidden hidden z-10 w-full items-center gap-4 py-3 px-5 rounded-full shadow-sm" for="search"><span class="w-auto flex align-items-center"><img class="w-5" src="./assets/svg/search.svg" alt="Icono de Busqueda"></span>
+          <input class="text-start outline-none w-full text-md font-semibold" id="search" type="search" placeholder="San Francisco">
+        </label>
+        <div class="tabBar hidden lg:block">
+          <div class="md:hidden landscape:hidden lg:flex lg:landscape:flex lg:static lg:border-none lg:py-0 lg:text-primary lg:font-bold lg:gap-8 xl:gap-12 lg:text-sm lg- xl:font-semibold w-full py-5 flex justify-center gap-10 bg-white border border-gray-200" id="tabBar"><a class="lg:hidden" href="#"><img src="./assets/svg/home.svg" alt="Icono del Home"></a><a href="#recommended"><img class="lg:hidden" src="./assets/svg/search.svg" alt="Icono de Busqueda">
+              <p class="hidden lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1">Locations</p></a><a href="#trending-stays"><img class="lg:hidden" src="./assets/svg/heart.svg" alt="Icono de Favoritos">
+              <p class="hidden lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1">Stays</p></a>
+            <button class="lg:hidden"><img src="./assets/svg/user.svg" alt="Icono de Usuario"></button><a class="hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1" href="#FAQs">FAQs</a><a class="hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1" href="#about-us">About Us</a>
+          </div>
+        </div>
+        <figure class="night-mode py-2 px-5 rounded-full bg-white shadow-lg cursor-pointer md:p-0 md:bg-transparent md:transition-none md:active:translate-y-0 md:active:shadow-none md:shadow-none md:flex md:gap-8 md:cursor-default"><img class="hidden lg:block lg:w-5 md:cursor-pointer" src="./assets/svg/search.svg" alt="Icono de Busqueda"><img class="md:w-5 md:cursor-pointer" src="./assets/svg/moon.svg" alt="Icono de modo nocturno"><img class="hidden md:block md:w-5" src="./assets/svg/user.svg" alt="Icono de usuario"></figure>
+      </nav>
+      <label class="md:mt-12 md:hidden md: z-10 w-full flex items-center gap-4 input-animation py-3 px-5 rounded-full shadow-lg bg-white" for="search"><span class="w-auto flex align-items-center"><img class="w-5" src="./assets/svg/search.svg" alt="Icono de Busqueda"></span>
+        <input class="text-start outline-none w-full text-md font-semibold" id="search" type="search" placeholder="San Francisco">
+      </label>
+      <h1 class="hidden z-10 text-3xl font-bold w-80 ml-14 mt-24 md:block lg:w-96 lg:text-4xl lg:mt-32 lg:ml-20">Find More Locations like this</h1>
+      <button class="z-10 button-animation bg-white text-primary text-md font-semibold p-3 rounded-full mt-64 shadow-lg w-3/5 md:w-44 md:mt-4 lg:mt-6 md:ml-14 lg:ml-20 xl:text-sm">Explore More</button>
+    </header>
+    <main class="flex flex-col gap-8 w-full py-6 md:py-10 md:gap-10" id="home">
+      <section class="w-full" id="recommended">
+        <h2 class="title pl-5 md:pl-10">Our Recommendations</h2>
+        <div class="mini-cards-container pt-6 pb-2 flex gap-5 overflow-x-scroll overscroll-x-contain scroll-smooth md:gap-7 md:pt-8 xl:justify-center">
+          <section class="mini-card ml-6">
+            <figure class="mini-card__img bg-norway"></figure>
+            <article class="mini-card__description bg-secondary text-white">
+              <h4 class="font-bold">Norway</h4>
+              <p class="text-xs">Beautiful landscapes</p>
+            </article>
+          </section>
+          <section class="mini-card m-0">
+            <figure class="mini-card__img bg-new_york"></figure>
+            <article class="mini-card__description bg-white text-tertiary">
+              <h4 class="font-bold">New York</h4>
+              <p class="text-xs">Concrete jungle</p>
+            </article>
+          </section>
+          <section class="mini-card m-0">
+            <figure class="mini-card__img bg-yosemite"></figure>
+            <article class="mini-card__description bg-secondary text-white">
+              <h4 class="font-bold">Yosemite</h4>
+              <p class="text-xs">A break from the world</p>
+            </article>
+          </section>
+          <section class="mini-card m-0">
+            <figure class="mini-card__img bg-seattle"></figure>
+            <article class="mini-card__description bg-white text-tertiary">
+              <h4 class="font-bold">Seattle</h4>
+              <p class="text-xs">Big City</p>
+            </article>
+          </section>
+          <section class="mini-card mr-6">
+            <figure class="mini-card__img bg-switzerland"></figure>
+            <article class="mini-card__description bg-secondary text-white">
+              <h4 class="font-bold">Switzerland</h4>
+              <p class="text-xs">Big City</p>
+            </article>
+          </section>
+        </div>
+      </section>
+      <section class="w-full" id="trending-stays">
+        <h2 class="title pl-5 pb-6 md:pl-10">Trending Stays</h2>
+        <div class="card-container px-4 grid gap-6 md:px-10 md:grid-cols-5 md:grid-rows-3 lg:grid-rows-layout">
+          <section class="card md:col-span-2 lg:col-span-full lg:row-span-1">
+            <div class="content">
+              <article class="card__description">
+                <h3 class="text-2xl font-bold tracking-wider mb-3">Chicago</h3>
+                <p class="text-base font-normal">2 rooms, bathroom and kitchen.</p>
+              </article>
+              <figure class="card__img bg-chicago lg:max-h-[30rem]"></figure>
+            </div>
+          </section>
+          <section class="card md:col-span-3 lg:col-span-full lg:row-span-2 lg:col-span-2">
+            <div class="content">
+              <article class="card__description">
+                <h3 class="text-2xl font-bold tracking-wider mb-3">Los Angeles</h3>
+                <p class="text-base font-normal">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
+              </article>
+              <figure class="card__img bg-LA lg:max-h-[36rem]"></figure>
+            </div>
+          </section>
+          <section class="card md:col-span-full lg:col-span-3">
+            <div class="content">
+              <article class="card__description">
+                <h3 class="text-2xl font-bold tracking-wider mb-3">Miami</h3>
+                <p class="text-base font-normal">3 rooms, 2 bathrooms,  kitchen and amazing sea view.</p>
+              </article>
+              <figure class="card__img bg-miami lg:max-h-[17rem]"></figure>
+            </div>
+          </section>
+          <section class="card md:col-span-full lg:col-span-3">
+            <div class="content">
+              <article class="card__description">
+                <h3 class="text-2xl font-bold tracking-wider mb-3">Bali</h3>
+                <p class="text-base font-normal">2 rooms, 2 bathrooms,  kitchen and private pool.</p>
+              </article>
+              <figure class="card__img bg-bali lg:max-h-[17rem]"></figure>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="w-full px-6 pb-2 flex flex-col gap-2 md:pl-10" id="FAQs">
+        <h2 class="title mb-2 md:mb-4">FAQs</h2>
+        <h3 class="subtitle">Payment Methods</h3>
+        <p class="description">We accept VISA, MasterCard, American Express, Paypal and Binance. We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
+        <h3 class="subtitle">Cancellation Policy</h3>
+        <p class="description">We accept VISA, MasterCard, American Express, Paypal and Binance. We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
+        <h3 class="subtitle">Long Stays</h3>
+        <p class="description">We accept VISA, MasterCard, American Express, Paypal and Binance. We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
+      </section>
+    </main>
+    <footer class="w-full px-6 pt-4 pb-8 bg-gray-100 border-t border-gray-200 text-sm font-medium text-gray-400 flex flex-col gap-3 md:pl-10 xl:bg-white" id="about-us">
+      <h3 class="text-xl font-semibold mb-2">About Us</h3><a class="w-fit" href="#">Investors</a><a class="w-fit" href="#">Jobs</a><a class="w-fit" href="#">Privacy policy</a><a class="w-fit" href="#">Terms and Conditions</a><a class="w-fit" href="#">Platzi Travel, inc</a><a class="w-fit" href="#">Follow Us</a>
+      <div class="social-media flex gap-4 w-fit"><a href="#"><img src="./assets/svg/twitter.svg" alt="Icono de Twitter"></a><a href="#"><img src="./assets/svg/instagram.svg" alt="Icono de Instagram"></a></div>
+    </footer>
+    <div class="tabBar lg:hidden sticky bottom-0">
+      <div class="md:hidden landscape:hidden lg:flex lg:landscape:flex lg:static lg:border-none lg:py-0 lg:text-primary lg:font-bold lg:gap-8 xl:gap-12 lg:text-sm lg- xl:font-semibold w-full py-5 flex justify-center gap-10 bg-white border border-gray-200" id="tabBar"><a class="lg:hidden" href="#"><img src="./assets/svg/home.svg" alt="Icono del Home"></a><a href="#recommended"><img class="lg:hidden" src="./assets/svg/search.svg" alt="Icono de Busqueda">
+          <p class="hidden lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1">Locations</p></a><a href="#trending-stays"><img class="lg:hidden" src="./assets/svg/heart.svg" alt="Icono de Favoritos">
+          <p class="hidden lg:block lg:px-2 lg:py-1 lg:rounded-full button-animation hover:translate-y-1">Stays</p></a>
+        <button class="lg:hidden"><img src="./assets/svg/user.svg" alt="Icono de Usuario"></button><a class="hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1" href="#FAQs">FAQs</a><a class="hidden lg:px-2 lg:py-1 lg:rounded-full lg:block button-animation hover:translate-y-1" href="#about-us">About Us</a>
+      </div>
+    </div>
+  </body>
+</html>
