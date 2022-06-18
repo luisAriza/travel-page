@@ -10,7 +10,7 @@
   @apply text-lg md:text-xl font-semibold tracking-wide text-primary;
 }
 .description {
-  @apply text-sm lg:font-medium font-semibold mb-3 lg:w-[40rem];
+  @apply text-sm md:font-medium font-semibold mb-3 lg:w-[40rem];
 }
 
 .mini-cards-container::-webkit-scrollbar {
@@ -20,7 +20,7 @@
   @apply h-56 md:h-60 shadow-md rounded-lg transition ease-in-out delay-100 duration-200 hover:-translate-y-2 hover:scale-110 lg:cursor-pointer;
 }
 .mini-card__img {
-  @apply w-44 md:w-52 h-3/5 bg-cover bg-no-repeat rounded-t-lg;
+  @apply w-44  md:w-48 h-3/5 bg-cover bg-no-repeat rounded-t-lg;
 }
 .mini-card__description {
   @apply h-2/5 p-3 space-y-1 rounded-b-lg;
@@ -30,10 +30,10 @@
   @apply my-1 mx-2 md:m-0 rounded-2xl overflow-hidden;
 }
 .card__description {
-  @apply w-3/4 h-[30rem] pl-8 pr-16 pt-12 absolute text-white transition ease-in-out delay-100 duration-200 hover:translate-y-10 hover:translate-x-4 hover:scale-110 lg:cursor-pointer;
+  @apply w-3/5 ml-8 lg:ml-0 lg:mr-10 mt-10 lg:mt-12 lg:text-right absolute text-white transition ease-in-out delay-100 duration-200 hover:translate-y-8 sm:hover:translate-x-10 md:hover:translate-x-5 lg:hover:-translate-x-6 hover:translate-x-6 hover:scale-110 md:cursor-pointer;
 }
 .card__img {
-  @apply w-full h-[36rem] md:max-h-[26rem] bg-cover bg-center bg-no-repeat;
+  @apply w-full h-[36rem] md:max-h-[26rem] bg-fixed bg-cover bg-center bg-no-repeat;
 }
 
 .night-mode {
@@ -49,6 +49,7 @@
 #tabBar,
 button,
 span,
-figure {
+figure,
+.card__description {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

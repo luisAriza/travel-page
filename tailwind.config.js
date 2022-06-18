@@ -36,6 +36,9 @@ module.exports = {
       gridTemplateRows: {
         layout: "repeat(3, minmax(0, auto))",
       },
+      screens: {
+        ".5xl": "1120px",
+      },
     },
   },
   variants: {
