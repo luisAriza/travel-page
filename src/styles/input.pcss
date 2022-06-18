@@ -21,7 +21,7 @@
   @apply h-56 md:h-60 shadow-md rounded-lg transition ease-in-out delay-100 duration-200 hover:-translate-y-2 hover:scale-110 lg:cursor-pointer;
 }
 .mini-card__img {
-  @apply w-44  md:w-48 h-3/5 bg-cover bg-no-repeat rounded-t-lg;
+  @apply w-40  md:w-48 h-3/5 bg-cover rounded-t-lg;
 }
 .mini-card__description {
   @apply h-2/5 p-3 space-y-1 rounded-b-lg;
@@ -33,10 +33,10 @@
   @apply mr-6;
 }
 .mini-card:nth-child(odd) {
-  @apply bg-secondary text-white;
+  @apply bg-secondary text-white dark:bg-gray-700;
 }
 .mini-card:nth-child(even) {
-  @apply bg-white text-tertiary;
+  @apply bg-white text-tertiary dark:bg-gray-800 dark:text-gray-300;
 }
 
 .card {

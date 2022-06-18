@@ -1,9 +1,10 @@
 include ../components/globals.pug
 
 doctype html
-html(lang="en")
+html(lang="en" class='')
 	include head.pug
-	body.w-full.font-Montserrat.box-border(class='xl:max-w-6xl xl:mx-auto')
+	body.w-full.font-Montserrat.box-border(class='xl:max-w-6xl xl:mx-auto dark:bg-gray-900')
 		include header.pug
 		block main
 		include footer.pug
+		script(src="./index.js")

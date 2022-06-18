@@ -4,7 +4,7 @@
   "description": "Proyecto de una pagina web de viajes",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwindcss -i ./src/styles/input.css -o ./dist/css/min.output.css --minify --watch",
+    "tailwind": "tailwindcss -i ./src/styles/input.pcss -o ./dist/css/min.output.css --minify --watch",
     "pug": "pug ./src/view/index.pug -o ./dist/ -w -P",
     "deploy": "gh-pages -d dist"
   },
@@ -20,8 +20,9 @@
   },
   "homepage": "https://github.com/luisAriza/travel_page#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
     "pug": "^3.0.2",
-    "pug-cli": "^1.0.0-alpha6",
     "tailwindcss": "^3.1.2"
   },
   "dependencies": {
