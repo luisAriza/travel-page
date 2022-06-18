@@ -1,14 +1,14 @@
 -var list_about_us = ['Investors', 'Jobs', 'Privacy policy', 'Terms and Conditions', 'Platzi Travel, inc', 'Follow Us'];
 
-mixin mini-card(image, title, description, bg_color, text_color, margin='m-0')
-	section.mini-card(class= margin)
+mixin mini-card(image, title, description)
+	section.mini-card
 		figure.mini-card__img(class= image)
-		article.mini-card__description(class=bg_color class= text_color)
+		article.mini-card__description
 			h4.font-bold=title
 			p.text-xs=description
 
-mixin card(image, title, description, col_span, row_span='md:row-span-1', height, width)
-	section.card(class=col_span class=row_span)
+mixin card(image, title, description, col_span__row_span, height, width)
+	section.card(class=col_span__row_span)
 		.content(class='grid lg:justify-items-end')
 			article.card__description(class=width)
 				h3.text-2xl.font-bold.tracking-wider.mb-4(class='lg:mb-2')= title

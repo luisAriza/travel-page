@@ -16,6 +16,7 @@
 .mini-cards-container::-webkit-scrollbar {
   display: none;
 }
+
 .mini-card {
   @apply h-56 md:h-60 shadow-md rounded-lg transition ease-in-out delay-100 duration-200 hover:-translate-y-2 hover:scale-110 lg:cursor-pointer;
 }
@@ -24,6 +25,18 @@
 }
 .mini-card__description {
   @apply h-2/5 p-3 space-y-1 rounded-b-lg;
+}
+.mini-card:first-child {
+  @apply ml-6;
+}
+.mini-card:last-child {
+  @apply mr-6;
+}
+.mini-card:nth-child(odd) {
+  @apply bg-secondary text-white;
+}
+.mini-card:nth-child(even) {
+  @apply bg-white text-tertiary;
 }
 
 .card {
