@@ -7,14 +7,14 @@ mixin mini-card(image, title, description, bg_color, text_color, margin='m-0')
 			h4.font-bold=title
 			p.text-xs=description
 
-mixin card(image, title, description, col_span, row_span='md:row-span-1')
+mixin card(image, title, description, col_span, row_span='md:row-span-1', height)
 	section.card(class=col_span class=row_span)
 		.content
 			article.card__description
 				h3.text-2xl.font-bold.tracking-wider.mb-3= title
 				p.text-base.font-normal= description
-			figure.card__img(class= image)
+			figure.card__img(class= image class=height)
 
 mixin FAQ(title)
 	h3.subtitle= title
-	p.description We accept VISA, MasterCard, American Express, Paypal and Binance.
+	p.description We accept VISA, MasterCard, American Express, Paypal and Binance. We accept VISA, MasterCard, American Express, Paypal and Binance.
