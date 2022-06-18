@@ -11,10 +11,10 @@ mixin card(image, title, description, col_span__row_span, height, width)
 	section.card(class=col_span__row_span)
 		.content(class='grid lg:justify-items-end')
 			article.card__description(class=width)
-				h3.text-2xl.font-bold.tracking-wider.mb-4(class='lg:mb-2')= title
+				h3.text-2xl.font-bold.tracking-wide.mb-4(class='lg:mb-2 md:tracking-tight')= title
 				p.text-base.font-normal= description
 			figure.card__img(class= image class=height)
 
 mixin FAQ(title)
-	h3.subtitle= title
-	p.description We accept VISA, MasterCard, American Express, Paypal and Binance. We accept VISA, MasterCard, American Express, Paypal and Binance.
+	h3.subtitle.ml-1(class='dark:text-gray-400')= title
+	p.description.pl-2(class='dark:text-gray-200') We accept VISA, MasterCard, American Express, Paypal and Binance. We accept VISA, MasterCard, American Express, Paypal and Binance.

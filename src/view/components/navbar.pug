@@ -1,15 +1,15 @@
-nav.z-10.w-full.py-5.flex.justify-end(class='md:bg-white md:justify-between md:px-7 md:py-2 md:items-center lg:px-9 lg:py-3 md:shadow-sm xl:shadow-none')
+nav.z-10.w-full.py-5.flex.justify-end(class='md:bg-white md:justify-between md:px-6 md:py-2 md:items-center lg:px-8 lg:py-3 md:shadow-sm xl:shadow-none xl:px-3 dark:md:bg-gray-800 dark:xl:bg-gray-900')
 	a(href="#" class='md:flex').hidden.items-center.gap-1
-		img(src="./assets/svg/favicon.svg" alt="Icono de la pagina").w-10
-		span.text-primary.text-lg.font-bold
+		img(src="./assets/svg/favicon.svg" alt="Icono de la pagina" class='xl:w-9').w-10
+		span.text-primary.text-lg.font-bold(class='xl:text-xl xl:font-semibold xl:tracking-tighter dark:text-white')
 			| Travel Page
-	label(for="search" class='md:w-1/2 md:flex lg:hidden').hidden.z-10.w-full.items-center.gap-4.py-3.px-5.rounded-full.shadow-sm
+	label(for="search" class='md:w-1/2 md:flex lg:hidden dark:md:shadow-gray-700').hidden.z-10.w-full.items-center.gap-4.py-3.px-5.rounded-full.shadow-sm
 		span.w-auto.flex.align-items-center
 			img.w-5(src="./assets/svg/search.svg" alt="Icono de Busqueda")
-		input#search.text-start.outline-none.w-full.text-md.font-semibold(type='search' placeholder='San Francisco')
+		input#search.text-start.outline-none.w-full.text-md.font-semibold(type='search' placeholder='San Francisco' class='dark:md:bg-gray-800 dark:text-white')
 	.tabBar.hidden(class='lg:block')
-		include tabBar.pug
-	figure.night-mode.py-2.px-5.rounded-full.bg-white.shadow-lg.cursor-pointer(class='md:p-0 md:bg-transparent md:transition-none md:active:translate-y-0 md:active:shadow-none md:shadow-none md:flex md:gap-8 md:cursor-default')
+		include tabBar_nav.pug
+	figure.night-mode.py-2.px-5.rounded-full.bg-white.shadow-lg.cursor-pointer(class='md:p-0 md:bg-transparent md:transition-none md:active:translate-y-0 md:active:shadow-none md:shadow-none md:flex md:gap-8 md:cursor-default dark:bg-gray-800 dark:md:bg-transparent')
 		img.hidden(src="./assets/svg/search.svg" alt="Icono de Busqueda" class='lg:block lg:w-5 md:cursor-pointer')
 		img#toggle(src="./assets/svg/moon.svg" alt="Icono de modo nocturno" class='md:w-5 md:cursor-pointer')
 		img.hidden(src="./assets/svg/user.svg" alt="Icono de usuario" class='md:block md:w-5')
