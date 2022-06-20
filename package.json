@@ -4,9 +4,8 @@
   "description": "Proyecto de una pagina web de viajes",
   "source": "src/index.pug",
   "scripts": {
-    "pug": "pug ./src/index.pug -o ./public/",
-    "start": "parcel",
-    "build": "parcel build",
+    "start": "parcel -p 8080 --open",
+    "build": "rm -rf dist && parcel build --no-source-maps --public-url .",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -28,6 +27,8 @@
     "tailwindcss": "^3.1.2"
   },
   "dependencies": {
+    "@parcel/config-default": "^2.6.1",
+    "@parcel/transformer-raw": "^2.6.1",
     "gh-pages": "^4.0.0"
   }
 }

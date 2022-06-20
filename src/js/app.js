@@ -1,5 +1,3 @@
-import "../css/styles.pcss";
-
 const htmlElement = document.querySelector("html");
 const toggleButton = document.querySelector("#toggle");
 const toggleButtonTabBar = document.querySelector("#toggleTabBar");
