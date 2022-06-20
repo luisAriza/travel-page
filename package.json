@@ -2,10 +2,11 @@
   "name": "tailwind_3.0-travel_page",
   "version": "1.0.0",
   "description": "Proyecto de una pagina web de viajes",
-  "main": "index.js",
+  "source": "src/index.pug",
   "scripts": {
-    "tailwind": "tailwindcss -i ./src/styles/input.pcss -o ./dist/css/min.output.css --minify --watch",
-    "pug": "pug ./src/view/index.pug -o ./dist/ -w -P",
+    "pug": "pug ./src/index.pug -o ./public/",
+    "start": "parcel",
+    "build": "parcel build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -20,7 +21,8 @@
   },
   "homepage": "https://github.com/luisAriza/travel_page#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
+    "@parcel/transformer-pug": "^2.6.1",
+    "parcel": "^2.6.1",
     "postcss": "^8.4.14",
     "pug": "^3.0.2",
     "tailwindcss": "^3.1.2"
