@@ -1,11 +1,11 @@
 header.header
 	include components/navbar.pug
 	figure.header__bg-img
-	label.header__search.searcher-animation(for="search")
+	label.header__search(for="search")
 		span
 			img.w-5(src="assets/svg/search.svg" alt="Icono de Busqueda")
 		input#search(type='search' placeholder='San Francisco')
 	h1.header__title
 		| Find More Locations like this
-	button.header__btn.button-animation
+	button.header__btn
 		| Explore More

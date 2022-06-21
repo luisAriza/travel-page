@@ -35,7 +35,8 @@ body {
   }
   /* Buscador del Header*/
   &__search {
-    @apply z-10
+    @apply searcher-animation
+    z-10
     flex
     items-center
     gap-4
@@ -68,7 +69,8 @@ body {
   }
   /* Boton de explorar */
   &__btn {
-    @apply z-10
+    @apply button-animation
+    z-10
     w-3/5
     mt-64
     p-3
@@ -174,7 +176,8 @@ body {
   }
   /* Menu de usuario */
   &__menu--user {
-    @apply flex
+    @apply night-mode
+    flex
     gap-8
     py-2 px-5
     rounded-full
@@ -189,6 +192,191 @@ body {
 
     dark:bg-gray-800
     dark:md:bg-transparent;
+  }
+}
+
+/* Main */
+.main {
+  @apply flex flex-col
+  gap-8
+  w-full
+  py-6
+
+  md:gap-10
+  md:py-10;
+}
+
+/* Mini Cards */
+.mini-cards {
+  @apply w-full;
+  /* Titulo de Mini Cards */
+  &__title {
+    @apply pl-5
+    text-2xl font-bold text-primary
+
+    md:pl-10
+    xl:pl-5
+    xl:tracking-tighter
+
+    dark:text-white;
+  }
+  /* Contenedor de Mini Cards */
+  &__container {
+    @apply flex
+    gap-5
+    pt-6 pb-2
+    overflow-x-scroll
+    overscroll-x-contain
+    scroll-smooth
+
+    md:gap-7
+    md:pt-8
+    .5xl:justify-center;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+/* Mini Card */
+.mini-card {
+  @apply mini-card-animation
+  h-56
+  rounded-lg
+  shadow-md
+
+  md:h-60
+  lg:cursor-pointer;
+  &__img {
+    @apply w-40 h-3/5
+    rounded-t-lg
+    bg-cover
+
+    md:w-48;
+  }
+  &__description {
+    @apply h-2/5
+    space-y-1
+    p-3
+    rounded-b-lg;
+  }
+  &:first-child {
+    @apply ml-6;
+  }
+  &:last-child {
+    @apply mr-6;
+  }
+  &:nth-child(odd) {
+    @apply text-white
+    bg-secondary
+
+    dark:bg-gray-700;
+  }
+  &:nth-child(even) {
+    @apply text-tertiary
+    bg-white
+
+    dark:text-gray-300
+    dark:bg-gray-800;
+  }
+}
+/* Cards */
+.cards {
+  @apply w-full;
+  &__title {
+    @apply pb-6 pl-5
+    text-2xl font-bold text-primary
+
+    md:pl-10
+    xl:pl-5
+    xl:tracking-tighter
+
+    dark:text-white;
+  }
+  /* Contenedor de Cards */
+  &__container {
+    @apply grid
+    gap-6
+    px-4
+
+    md:grid-cols-5
+    md:grid-rows-3
+    md:px-10
+    lg:grid-rows-layout;
+  }
+}
+/* Card */
+.card {
+  @apply my-1 mx-2
+  rounded-2xl
+  overflow-hidden
+
+  md:m-0;
+  /* Contenido de la Card */
+  &__content {
+    @apply grid
+
+    lg:justify-items-end;
+  }
+  &__description {
+    @apply card__description-animation
+    absolute
+    w-3/5
+    mt-10 ml-8
+    text-white
+    cursor-pointer
+
+    lg:mt-12 lg:mr-10 lg:ml-0
+    lg:text-right;
+    & h3 {
+      @apply text-2xl font-bold tracking-wide
+      mb-4
+
+      md:tracking-tight
+      lg:mb-2;
+    }
+  }
+  &__img {
+    @apply w-full h-[36rem]
+    bg-fixed bg-cover bg-center bg-no-repeat
+
+    md:max-h-[26rem];
+  }
+}
+/* FAQs */
+.faqs {
+  @apply flex flex-col
+  gap-2
+  w-full
+  px-6 pb-2
+
+  md:pl-10
+  xl:pl-5;
+  &__title {
+    @apply mb-2
+    text-2xl font-bold text-primary
+
+    md:mb-4
+    xl:tracking-tighter
+
+    dark:text-white;
+  }
+  &__subtitle {
+    @apply ml-1
+    text-lg font-semibold tracking-wide text-primary
+
+    md:text-xl
+
+    dark:text-gray-400;
+  }
+  &__description {
+    @apply mb-3
+    pl-2
+    text-sm font-semibold
+
+    md:font-medium
+    lg:w-[40rem]
+
+    dark:text-gray-200;
   }
 }
 
@@ -215,7 +403,6 @@ body {
     ml-1;
   }
 }
-
 /* TabBar */
 .tabBar {
   @apply sticky bottom-0
@@ -235,67 +422,61 @@ body {
   dark:bg-gray-800;
 }
 
-.title {
-  @apply text-2xl font-bold text-primary xl:tracking-tighter dark:text-white;
-}
-
-.subtitle {
-  @apply text-lg md:text-xl font-semibold tracking-wide text-primary;
-}
-.description {
-  @apply text-sm md:font-medium font-semibold mb-3 lg:w-[40rem];
-}
-
-.mini-cards-container::-webkit-scrollbar {
-  display: none;
-}
-
-.mini-card {
-  @apply h-56 md:h-60 shadow-md rounded-lg transition ease-in-out delay-100 duration-200 hover:-translate-y-2 hover:scale-110 lg:cursor-pointer;
-}
-.mini-card__img {
-  @apply w-40  md:w-48 h-3/5 bg-cover rounded-t-lg;
-}
-.mini-card__description {
-  @apply h-2/5 p-3 space-y-1 rounded-b-lg;
-}
-.mini-card:first-child {
-  @apply ml-6;
-}
-.mini-card:last-child {
-  @apply mr-6;
-}
-.mini-card:nth-child(odd) {
-  @apply bg-secondary text-white dark:bg-gray-700;
-}
-.mini-card:nth-child(even) {
-  @apply bg-white text-tertiary dark:bg-gray-800 dark:text-gray-300;
-}
-
-.card {
-  @apply my-1 mx-2 md:m-0 rounded-2xl overflow-hidden;
-}
-.card__description {
-  @apply w-3/5 ml-8 lg:ml-0 lg:mr-10 mt-10 lg:mt-12 lg:text-right absolute text-white transition ease-in-out delay-100 duration-200 hover:translate-y-8 sm:hover:translate-x-10 md:hover:translate-x-5 lg:hover:-translate-x-6 hover:translate-x-6 hover:scale-110 md:cursor-pointer;
-}
-.card__img {
-  @apply w-full h-[36rem] md:max-h-[26rem] bg-fixed bg-cover bg-center bg-no-repeat;
-}
-
 /* Animiaciones */
 .searcher-animation {
-  @apply transition ease-in-out duration-200 delay-150 focus-within:shadow-sm focus-within:translate-y-1;
+  @apply transition ease-in-out
+  duration-200 delay-150
+
+  focus-within:translate-y-1
+  focus-within:shadow-sm;
 }
 .button-animation {
-  @apply transition ease-in-out active:translate-y-1 lg:hover:duration-200 lg:hover:scale-110 lg:hover:bg-primary lg:hover:text-white dark:lg:hover:bg-white dark:lg:hover:text-primary;
+  @apply transition ease-in-out
+
+  active:translate-y-1
+
+  lg:hover:scale-110
+  lg:hover:duration-200
+  lg:hover:text-white
+  lg:hover:bg-primary
+
+  dark:lg:hover:text-primary
+  dark:lg:hover:bg-white;
 }
 .night-mode {
-  @apply transition ease-in-out active:shadow-sm active:translate-y-0.5 md:transition-none md:active:translate-y-0 md:active:shadow-none;
+  @apply transition ease-in-out
+
+  active:translate-y-0.5
+  active:shadow-sm
+
+  md:transition-none
+  md:active:translate-y-0
+  md:active:shadow-none;
+}
+.mini-card-animation {
+  @apply transition ease-in-out
+  duration-200 delay-100
+
+  hover:scale-110
+  hover:-translate-y-2;
+}
+.card__description-animation {
+  @apply transition ease-in-out
+  duration-200 delay-100
+
+  hover:scale-110
+  hover:translate-y-8
+  hover:translate-x-6
+
+  sm:hover:translate-x-10
+  md:hover:translate-x-5
+  lg:hover:-translate-x-6;
 }
 
 .tabBar,
 button,
 span,
-figure {
+figure,
+.card__content {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
