@@ -1,29 +1,33 @@
-# travel_page
+# Travel Page
 
-Curso de Tailwind
-
-## Building and running on localhost
+## Running and building on localhost
 
 First install dependencies:
 
-```sh
+```
 npm install
 ```
+
+### Running
+
+```sh
+npm run start
+```
+
+Now open http://localhost:1234/ in your browser to see the project (Travel Page).
+
+### Building
 
 To create a production build:
 
 ```sh
-npm run build-prod
+npm run build
 ```
 
-To create a development build:
+### Deploy
+
+To deploy in **GitHub Pages** from production build:
 
 ```sh
-npm run build-dev
-```
-
-## Running
-
-```sh
-node dist/bundle.js
+npm run deploy
 ```
