@@ -4,7 +4,7 @@
   "description": "Proyecto de una pagina web de viajes",
   "source": "src/index.pug",
   "scripts": {
-    "start": "parcel --open",
+    "start": "parcel -p 2664 --open",
     "build": "rm -rf dist && parcel build --no-source-maps --public-url .",
     "deploy": "gh-pages -d dist"
   },
